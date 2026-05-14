@@ -47,5 +47,5 @@ O repositório também inclui uma lista de exercícios de múltipla escolha e qu
 
 ---
 
-**Autor:** Wesley (Senhor Stone)
+**Autor:** Wesley Fernandes
 *Desenvolvido durante os estudos de Análise e Desenvolvimento de Sistemas (ADS).*
