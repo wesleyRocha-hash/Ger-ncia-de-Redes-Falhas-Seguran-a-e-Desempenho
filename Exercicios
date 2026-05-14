@@ -1,0 +1,59 @@
+Aqui está uma lista de exercícios abordando os temas da Unidade 4 (Gerência de redes e padrões, Falhas e Segurança, e Desempenho e Configuração), baseada nos conceitos abordados em nosso histórico e nas fontes.
+
+### **Questões**
+
+**Exercício 1: Áreas de Gerenciamento**
+De acordo com o modelo de gerenciamento de redes proposto pela ISO, as atividades de gerência são divididas em cinco áreas de atuação. Assinale a alternativa que indica corretamente essas cinco áreas:
+a) Coleta de dados, análise e diagnóstico, controle, segurança e contabilização.
+b) Desempenho, falhas, configuração, contabilização e segurança.
+c) SNMP, CMIP, TMN, OSI e TCP/IP.
+d) Entidade gerenciadora, dispositivo gerenciado, agente, gerente e MIB.
+
+**Exercício 2: Protocolos e Ferramentas**
+Relacione os protocolos e ferramentas de gerenciamento às suas respectivas características:
+1. SNMP
+2. CMIP
+3. TMN
+4. Sniffing
+
+( ) Ferramenta que efetua a interceptação e o registro de dados ("farejar") para checar se a rede opera nos parâmetros definidos e investigar serviços não autorizados.
+( ) Protocolo baseado no modelo de referência OSI, cuja principal vantagem é a alta segurança, porém possui a desvantagem de consumir muitos recursos do sistema e ter programação difícil.
+( ) Protocolo simples e popular de gerência que atua com quatro componentes básicos: nodos gerenciados (agentes), estação de gerenciamento (gerente), informações de gerenciamento (MIB) e o próprio protocolo.
+( ) Modelo estruturado focado em telecomunicações, que é dividido nas arquiteturas informacional, funcional e física.
+
+**Exercício 3: Erros de Transmissão**
+Qualquer sistema de comunicação de dados está sujeito a erros físicos de transmissão, que podem ser causados por interferência, distorção ou atenuação. Quando o erro afeta os dados da mensagem, ele pode ser classificado basicamente de três formas. 
+Explique a diferença entre o **"erro em um único bit"** e o **"erro em rajada"**, e cite quais são os dois métodos utilizados para a correção desses erros.
+
+**Exercício 4: Métricas de Falhas**
+Para prever falhas de hardware por meio de análises estatísticas e planejar os tempos de parada para manutenção nas redes, os administradores utilizam duas métricas fundamentais. Escreva o significado das siglas **MTBF** e **MTTR** e o que cada uma delas calcula.
+
+**Exercício 5: Segurança em Redes**
+Sobre os mecanismos de segurança e prevenção em redes, indique (V) para Verdadeiro e (F) para Falso:
+( ) O princípio de Kerckhoff afirma que todos os algoritmos de criptografia podem ser públicos, mas as chaves devem ser mantidas em segredo total.
+( ) Os logs são registros importantes do histórico de atividades de uma rede e, para garantirem a veracidade dos dados, devem ter seus horários sincronizados com um servidor HTTP.
+( ) O Controle de Acesso (NAC - Network Access Control) tem como funções evitar intrusões fraudulentas na rede e barrar dispositivos vulneráveis ou infectados que não possuam credenciais autorizadas.
+( ) Para garantir a segurança nas comunicações de interesse governamental, a literatura indica a utilização de chaves criptográficas curtas, de 64 bits.
+
+**Exercício 6: Indicadores de Desempenho (QoS)**
+O desempenho e a Qualidade de Serviço (QoS) de uma rede são influenciados por diferentes indicadores. Relacione o indicador à sua correta definição:
+1. Vazão (Throughput)
+2. Latência (Atraso)
+3. Jitter
+4. Perda de pacotes
+
+( ) Acontece frequentemente quando a capacidade de armazenamento dos roteadores (buffers) é esgotada devido ao alto tráfego.
+( ) Pode ser definido como a variação no tempo e na ordem (sequência) de entrega dos pacotes.
+( ) Quantidade de dados efetivamente transferidos ou processados em um determinado intervalo de tempo, geralmente medido em bps.
+( ) Intervalo de tempo contado desde o momento em que o pacote é enviado pelo emissor até o recebimento de sua confirmação.
+
+---
+
+### **Gabarito**
+
+*   **Exercício 1:** Letra **b**. A ISO dividiu o modelo de gerenciamento em áreas de: Desempenho, falhas, configuração, contabilização e segurança.
+*   **Exercício 2:** A sequência correta é: **4**, **2**, **1**, **3**.
+*   **Exercício 3:** O erro em um **único bit** altera apenas um bit e causa uma degradação de curta duração, enquanto o erro em **rajada** altera vários bits simultaneamente, resultando em uma degradação de longo período. Para corrigir esses erros, utiliza-se a correção antecipada (FEC) usando bits redundantes, ou solicita-se a retransmissão da mensagem ao emissor.
+*   **Exercício 4:** **MTBF** (Tempo Médio Entre Falhas) é a previsão estatística do tempo médio que a rede levará para apresentar uma nova falha. **MTTR** (Tempo Médio para Reparos) é a previsão estatística do tempo necessário para consertar e reparar uma falha após sua ocorrência.
+*   **Exercício 5:** A sequência correta é: **V**, **F** (os relógios devem ser sincronizados usando um servidor NTP, e não HTTP), **V**, **F** (comunicações governamentais exigem chaves mais longas, de 256 bits).
+*   **Exercício 6:** A sequência correta é: **4**, **3**, **1**, **2**.
